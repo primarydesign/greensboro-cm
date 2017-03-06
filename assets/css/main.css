@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Harmattan|Nunito+Sans:400,700,900|Poppins");
+/* line 8, ../../sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: padding-box;
+  font-size: 16px;
+}
+
+/* line 14, ../../sass/main.scss */
+.section {
+  text-align: center;
+  padding: 60px 15px;
+  background-color: #005dac;
+}
+
+/* line 19, ../../sass/main.scss */
+.section__headline {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1em;
+  letter-spacing: 1px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+/* line 29, ../../sass/main.scss */
+.blurb {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  color: #fff;
+  font-size: 1.25em;
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 38, ../../sass/main.scss */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 43, ../../sass/main.scss */
+.subhead {
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 50, ../../sass/main.scss */
+.button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 20px 60px;
+  background: #005dac;
+  color: #fff;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 60, ../../sass/main.scss */
+.nav {
+  background: #fff;
+  text-align: center;
+}
+
+/* line 64, ../../sass/main.scss */
+.nav__logo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 225px;
+}
+
+/* line 70, ../../sass/main.scss */
+.nav__donate-button {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* line 74, ../../sass/main.scss */
+.nav__donate-button:hover {
+  background: #f99f38;
+}
+
+/* line 77, ../../sass/main.scss */
+.header {
+  background: #b3c022;
+}
+
+/* line 80, ../../sass/main.scss */
+.header__play-logo {
+  display: block;
+  margin: 0 auto 30px;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* line 87, ../../sass/main.scss */
+.header__blurb {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+/* line 92, ../../sass/main.scss */
+.section--videos {
+  background: #f99f38;
+}
+
+/* line 96, ../../sass/main.scss */
+.videos__list-item {
+  display: inline-block;
+  width: 33%;
+  margin-bottom: 60px;
+}
+
+/* line 101, ../../sass/main.scss */
+video {
+  height: auto;
+  width: 95%;
+  max-width: 1280px;
+}
+
+/* line 108, ../../sass/main.scss */
+.facts__blurb {
+  padding-bottom: 60px;
+  font-size: 1.5rem;
+}
+
+/* line 112, ../../sass/main.scss */
+.facts__list, .why__list {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+/* line 117, ../../sass/main.scss */
+.facts__list-item, .why__list-item {
+  display: inline-block;
+  width: 27%;
+  min-height: 175px;
+  padding: 85px 1.5% 0;
+  margin: 1.5%;
+  vertical-align: top;
+  font-size: 1rem;
+  border-radius: 10px;
+  background: url("../img/trophy.svg") no-repeat 50% 30px;
+  background-size: 75px;
+}
+
+/* line 132, ../../sass/main.scss */
+.fact__blurb, .why__blurb {
+  max-width: 320px;
+  font-size: 1.1rem;
+}
+
+/* line 136, ../../sass/main.scss */
+.section--why {
+  background: #f99f38;
+}
+
+/* line 146, ../../sass/main.scss */
+.donate__form {
+  max-width: 960px;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+/* line 151, ../../sass/main.scss */
+.donate__label {
+  display: inline-block;
+  width: 28%;
+  margin: 0 5% 15px 0;
+  text-align: left;
+  vertical-align: top;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: .7rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+/* line 164, ../../sass/main.scss */
+.donate__input {
+  display: block;
+  height: 30px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1.25rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* line 173, ../../sass/main.scss */
+.input--expmonth, .input--expyear {
+  width: 60px;
+  margin-right: 5px;
+  display: inline;
+}
+
+/* line 178, ../../sass/main.scss */
+.input--expyear {
+  width: 80px;
+}
+
+/* line 181, ../../sass/main.scss */
+.donate__submit-button {
+  border: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: #f99f38;
+}
+
+/* line 188, ../../sass/main.scss */
+.thanks__blurb {
+  padding-top: 150px;
+  background: url(../img/trophy.svg) no-repeat 50% 0;
+  background-size: 125px;
+}

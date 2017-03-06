@@ -1,0 +1,192 @@
+/*
+$blue: #005dac;
+$green: #fef200;
+$orange: #f99f38;
+*/
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Nunito+Sans:400,700,900|Poppins');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing:padding-box;
+    font-size: 16px;
+}
+.section {
+    text-align: center;
+    padding: 60px 15px;
+    background-color: #005dac;
+}
+.section__headline {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    line-height: 1em;
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+.blurb {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 1.25em;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.subhead {
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 20px 60px;
+    background: #005dac;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav {
+    background: #fff;
+    text-align: center;
+}
+.nav__logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 225px;
+}
+.nav__donate-button {
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav__donate-button:hover {
+    background: #f99f38;
+}
+.header {
+    background: #fef200;
+}
+.header__play-logo {
+    display: block;
+    margin: 0 auto 30px;
+    width: 100%;
+    max-width: 350px;    
+}
+
+.header__blurb {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.section--videos {
+    background: #f99f38;     
+}
+.videos__list {}
+.videos__list-item {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 60px;
+}
+video {
+    height: auto;
+    width: 95%;
+    max-width: 1280px;
+}
+
+.section--facts {}
+.facts__blurb {
+    padding-bottom: 60px;
+    font-size: 1.5rem;
+}
+.facts__list, .why__list {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 0;
+}
+.facts__list-item, .why__list-item  {
+    display: inline-block;
+    width: 27%;
+    min-height: 175px;
+    padding: 85px 1.5% 0;    
+    margin: 1.5%;    
+    vertical-align: top;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: url('../img/trophy.svg') no-repeat 50% 30px;
+    background-size: 75px;
+    
+}
+.facts__subhead {}
+
+.fact__blurb, .why__blurb {
+    max-width: 320px;
+    font-size: 1.1rem;
+}
+.section--why {
+    background: #f99f38; 
+}
+
+.why__list {}
+.why__list-item {}
+.why__subhead {}
+.why__blurb {}
+
+.section--donate {}
+.donate__form {
+    max-width: 960px;
+    font-size: 0;    
+    margin: 0 auto
+}
+.donate__label {
+    display: inline-block;
+    width: 28%;
+    margin: 0 5% 15px 0;
+    text-align: left;
+    vertical-align: top;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+.donate__input {
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1.25rem;
+    font-family: 'Nunito Sans', sans-serif;    
+}
+.input--expmonth, .input--expyear {
+    width: 60px;
+    margin-right: 5px;
+    display: inline;
+}
+.input--expyear {
+    width: 80px;
+}
+.donate__submit-button {
+    border: 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: #f99f38;
+}
+.section--thanks {}
+.thanks__blurb {
+    padding-top: 150px;
+    background: url(../img/trophy.svg) no-repeat 50% 0;
+    background-size: 125px;
+}
