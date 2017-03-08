@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Morphing Buttons Concept | Demo 6</title>
+		<meta name="description" content="Morphing Buttons Concept: Inspiration for revealing content by morphing the action element" />
+		<meta name="keywords" content="expanding button, morph, modal, fullscreen, transition, ui" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="codrops-header">
+				<nav class="codrops-demos">
+					<a href="modal-form.html">Donate Form</a>
+					<a href="modal-share.html">Share Button</a>
+					<a class="current-demo">Video Button</a>
+				</nav>
+			</header>
+			<section>
+				<div class="mockup-content">
+						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video</button>
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+				</div><!-- /form-mockup -->
+			</section>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {
+				new UIMorphingButton( document.querySelector( '.morph-button' ), {
+					closeEl : '.icon-close'
+				} );
+			})();
+		</script>
+	</body>
+</html>

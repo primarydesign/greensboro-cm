@@ -15,34 +15,40 @@
   <![endif]-->
 </head>
 
-<body>
-    <nav class="section nav">
-        <img class="nav__logo" alt="Greensboro Children's Museum" src="assets/img/greensboro-childrens-museum_logo.svg">
+<body >
+<div id="video" data-vide-bg="assets/video/reel" data-vide-options="position: 50% 0%">    
+    <nav class="section nav" style="background:rgba(0,0,0,0.2);min-height:20vh">
     </nav>
-    <header class="section header">
+    <header class="section header" style="background:rgba(0,0,0,0.2);min-height:55vh">
         <img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg">
+        
         <p class="blurb header__blurb">
         We made a series of videos on how play benefits kids in unexpected ways. Donating to our museum will help kids in your community develop skills for life!
         </p>
-        <a class="button nav__donate-button" href="#donate">Donate</a>        
+        <a class="button nav__donate-button" href="#donate">Donate</a>
+        
     </header>
+</div>    
+    <nav class="section nav">
+        <img class="nav__logo" alt="Greensboro Children's Museum" src="assets/img/greensboro-childrens-museum_logo.svg">
+    </nav>
     <section class="section section--videos">
         <h2  class="section__headline">Watch Our Videos</h2>
         <ul class="list videos__list">
             <li class="videos__list-item">
-                <video width="1280" height="720" controls>
+                <video class="videos__video" width="1280" height="720" controls>
                   <source src="assets/video/basket.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>            
             </li>
             <li class="videos__list-item">
-                <video width="1280" height="720" controls>
+                <video class="videos__video" width="1280" height="720" controls>
                   <source src="assets/video/crossword.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>            
             </li>
             <li class="videos__list-item">
-                <video width="1280" height="720" controls>
+                <video class="videos__video" width="1280" height="720" controls>
                   <source src="assets/video/soccer.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>            
@@ -53,24 +59,29 @@
         <h2 class="section__headline">Facts About Play</h2>
         <p class="blurb facts__blurb">Studies show play is an essential part of early childhood development. While playing, kids build cognitive skills, vocabulary, literacy, gross and fine motor skills and socialization.</p>
         <ul class="list facts__list">
-            <li class="facts__list-item">
+            <li class="facts__list-item fact--physical">
                 <h3 class="subhead facts__subhead">Physical Abilities</h3>
                 <p class="blurb fact__blurb">Play helps develop hand-eye coordination, dexterity and overall physical health.</p>
             </li>
-            <li class="facts__list-item">                <h3 class="subhead facts__subhead">Reading</h3>
+            <li class="facts__list-item fact--reding">
+                <h3 class="subhead facts__subhead">Reading</h3>
                 <p class="blurb fact__blurb">Play helps kids learn to read at an earlier age.</p>
             </li>
-            <li class="facts__list-item">                <h3 class="subhead facts__subhead">Social Skills</h3>
+            <li class="facts__list-item fact--social">
+                <h3 class="subhead facts__subhead">Social Skills</h3>
                 <p class="blurb fact__blurb">Play helps kids make firends and develop social skills that will benefit them into adulthood.</p>
             </li>            
-            <li class="facts__list-item">                <h3 class="subhead facts__subhead">Vocabulary</h3>
-                <p class="blurb fact__blurb">Play helps develop hand-eye coodination, dexterity and overall physical health.</p>
+            <li class="facts__list-item fact--vocab">
+                <h3 class="subhead facts__subhead">Vocabulary</h3>
+                <p class="blurb fact__blurb">Play helps increase their vocabulary and deepens their understanding of complex words and concepts.</p>
             </li>
-            <li class="facts__list-item">                <h3 class="subhead facts__subhead">Creativity</h3>
+            <li class="facts__list-item fact--creativity">
+                <h3 class="subhead facts__subhead">Creativity</h3>
                 <p class="blurb fact__blurb">Play helps develop creativity and problem-solving skills.</p>
             </li>
-            <li class="facts__list-item">                <h3 class="subhead facts__subhead">Physical Abilities</h3>
-                <p class="blurb fact__blurb">Play helps develop hand-eye coordination, dexterity and overall physical health.</p>
+            <li class="facts__list-item fact--confidence">
+                <h3 class="subhead facts__subhead">Confidence</h3>
+                <p class="blurb fact__blurb">Play helps increase confidence and develop better self-esteem in children.</p>
             </li>            
         </ul>
     </section>
@@ -120,10 +131,10 @@
             <label class="donate__label label--city">City
             <input class="donate__input input--city" type="text" name="city"></label>
             
-            <label class="donate__label label--street">State
-            <input class="donate__input input--street" type="text" name="state"></label>
+            <label class="donate__label label--state">State<br>
+            <input class="donate__input input--state" type="text" name="state"></label>
         
-            <label class="donate__label label--zip">Zip
+            <label class="donate__label label--zip">Zip<br>
             <input class="donate__input input--zip" type="text" name="zip"></label>
             
             <label class="donate__label label--email">Email
@@ -142,7 +153,7 @@
             <input class="donate__input input--expmonth" type="number"  maxlength="2" name="month" placeholder="MM">
             <input class="donate__input input--expyear" type="number" maxlength="4" name="year" placeholder="YYYY"></label>
             
-            <label class="donate__label label--svs">CVC
+            <label class="donate__label label--cvc">CVC
             <input class="donate__input input--cvc" type="text" name="cvc"></label>        
             
             <input class="button donate__submit-button" type="submit" alt="Donate" value="Donate">
@@ -151,9 +162,41 @@
     <section class="section section--thanks">
         <h2 class="section__headline">Thank You!</h2>
         <p class="blurb thanks__blurb">
-            You have successfully doanted! Your donation will help thousands of Greensboro kids a year enjoy the educational and developmental programs at the Greensboro Childerens Museum.
+            You have successfully doanted! Your donation will help thousands of Greensboro kids a year enjoy the educational and developmental programs at the Greensboro Childeren's Museum.
         </p>
     </section>
-    <script src="js/scripts.js"></script>
+    <footer class="section footer">
+        <ul class="footer__social-icons">
+            <li class="footer__social-icon">
+                <a href="https://www.facebook.com/The-Greensboro-Childrens-Museum-119534706491/?ref=nf" target="_blank">
+                    <img src="assets/img/social/icon_facebook.svg" />
+                    </a>
+            </li>
+            <li class="footer__social-icon">
+                <a href="https://twitter.com/GCMuseum" target="_blank">
+                    <img src="assets/img/social/icon_twitter.svg" />
+                </a>
+            </li>
+            <li class="footer__social-icon">
+                <a href="https://www.youtube.com/user/gsochildrensmuseum" target="_blank">
+                    <img src="assets/img/social/icon_youtube.svg" />
+                </a>
+            </li>
+            <li class="footer__social-icon">
+                <a href="https://www.pinterest.com/source/gcmuseum.com/" target="_blank">
+                    <img src="assets/img/social/icon_pinterest.svg" />
+                </a>
+            </li>
+            <li class="footer__social-icon">
+                <a href="https://www.instagram.com/greensborochildrensmuseum/" target="_blank">
+                    <img src="assets/img/social/icon_instagram.svg" />
+                </a>
+            </li>            
+        </ul>
+        <p class="blurb footer__blurb">&copy; 2017 Greensboro Children's Museum</p>
+    </footer>    
 </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/jquery.vide.js"></script>
 </html>

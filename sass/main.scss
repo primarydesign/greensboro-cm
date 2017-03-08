@@ -1,15 +1,21 @@
 
-$blue: #005dac;
-$green: #b3c022;
+$blue:   #005dac;
+$green:  #b3c022;
 $orange: #f99f38;
 
-@import url('https://fonts.googleapis.com/css?family=Harmattan|Nunito+Sans:400,700,900|Poppins');
+$small:  640px;
+$medium: 960px;
+$large:  1280px;
 
-body {
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing:padding-box;
+    box-sizing: padding-box;
     font-size: 16px;
+    height: 100%;
+    width: 100%;
 }
 .section {
     text-align: center;
@@ -23,7 +29,7 @@ body {
     line-height: 1em;
     letter-spacing: 1px;
     font-family: 'Nunito Sans', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     padding-bottom: 30px;
 }
 .blurb {
@@ -34,6 +40,7 @@ body {
     font-size: 1.25em;
     font-family: 'Nunito Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .list {
     padding: 0;
@@ -72,7 +79,7 @@ body {
     font-weight: 700;
 }
 .nav__donate-button:hover {
-    background: #f99f38;
+    background: $orange;
 }
 .header {
     background: $green;
@@ -81,7 +88,7 @@ body {
     display: block;
     margin: 0 auto 30px;
     width: 100%;
-    max-width: 350px;    
+    max-width: 500px;    
 }
 
 .header__blurb {
@@ -90,15 +97,17 @@ body {
 }
 
 .section--videos {
-    background: #f99f38;     
+    background: $green;     
 }
 .videos__list {}
 .videos__list-item {
     display: inline-block;
-    width: 33%;
     margin-bottom: 60px;
+    @media (min-width: $medium) {
+        width: 33%;
+    } 
 }
-video {
+ .videos__video {
     height: auto;
     width: 95%;
     max-width: 1280px;
@@ -116,7 +125,6 @@ video {
 }
 .facts__list-item, .why__list-item  {
     display: inline-block;
-    width: 27%;
     min-height: 175px;
     padding: 85px 1.5% 0;    
     margin: 1.5%;    
@@ -125,7 +133,27 @@ video {
     border-radius: 10px;
     background: url('../img/trophy.svg') no-repeat 50% 30px;
     background-size: 75px;
-    
+    @media (min-width: $medium) {
+        width: 27%;
+    }     
+}
+.fact--physical {
+    background-image: url('../img/facts/icon_physical.svg');
+}
+.fact--reding {
+    background-image: url('    ../img/facts/icon_reading.svg');
+}
+.fact--social {
+ background-image: url('../img/facts/icon_social.svg');    
+}
+.fact--vocab {
+    background-image: url('../img/facts/icon_vocabulary.svg');
+}
+.fact--creativity {
+    background-image: url('../img/facts/icon_creativity.svg');
+}
+.fact--confidence {
+    background-image: url('../img/facts/icon_confidence.svg');
 }
 .facts__subhead {}
 
@@ -134,7 +162,7 @@ video {
     font-size: 1.1rem;
 }
 .section--why {
-    background: #f99f38; 
+    background: $green; 
 }
 
 .why__list {}
@@ -150,8 +178,8 @@ video {
 }
 .donate__label {
     display: inline-block;
-    width: 28%;
-    margin: 0 5% 15px 0;
+    width: 90%;
+    margin: 0 0 15px 0;
     text-align: left;
     vertical-align: top;
     color: #fff;
@@ -160,33 +188,68 @@ video {
     font-size: .7rem;
     letter-spacing: .05em;
     text-transform: uppercase;
+    @media (min-width: $small) {
+        width: 43%;
+        margin: 0 3% 15px 3%;
+    } 
+    @media (min-width: $medium) {
+        width: 27%;
+    }    
 }
 .donate__input {
     display: block;
     height: 30px;
-    width: 100%;
+    width: 96%;
     margin-top: 5px;
     padding: 5px;
     font-size: 1.25rem;
     font-family: 'Nunito Sans', sans-serif;    
+}
+.label--exp, .label--cvc {
+    @media (max-width: $medium) {
+        width: 44%;
+    }
 }
 .input--expmonth, .input--expyear {
     width: 60px;
     margin-right: 5px;
     display: inline;
 }
-.input--expyear {
+.input--expyear, .input--cvc {
     width: 80px;
+    margin-right: 15px;
 }
 .donate__submit-button {
+    width: 90%;
     border: 0;
     font-weight: 700;
     letter-spacing: 2px;
-    background: #f99f38;
+    background: $orange;
+    @media (min-width: $small) {
+        width: 27%;
+    }    
 }
 .section--thanks {}
 .thanks__blurb {
     padding-top: 150px;
     background: url(../img/trophy.svg) no-repeat 50% 0;
     background-size: 125px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.footer__social-icons {
+    list-style-type: none;
+    margin: 15px auto;
+    padding: 0;
+}
+.footer__social-icon {
+    display: inline-block;
+    width: 25px;
+    padding: 10px;
+}
+.footer__blurb {
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: .85em;
 }
