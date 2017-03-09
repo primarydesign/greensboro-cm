@@ -96,7 +96,7 @@ body, html {
     text-decoration: none;
     font-weight: 700;
     border: 1px solid #fff;
-    background: $orange;   
+    background: $green;   
     transition: background .25s;
     @media (min-width: $large) {
         margin: 30px 10% 0 0;
@@ -104,7 +104,7 @@ body, html {
     }
 }
 .nav__donate-button:hover {
-    background: $blue;
+    background: $orange;
 }
 .nav__blurb {
     display: none;
@@ -133,9 +133,12 @@ body, html {
 }
 .header__play-logo {
     display: block;
-    margin: 300px auto;
+    margin: 25% auto;
     width: 100%;
-    max-width: 500px;    
+    max-width: 500px;
+    @media (min-width: $medium) {
+        margin: 300px auto;
+    }
 }
 .header__button {
     background: none;
@@ -173,7 +176,11 @@ body, html {
     width: 95%;
     max-width: 1280px;
 }
-.section--facts {}
+.section--facts {
+    .section__headline {
+        padding-top: 100px;   
+    }
+}
 .facts__blurb {
     //padding-bottom: 60px;
     //font-size: 1.5rem;
@@ -215,7 +222,8 @@ body, html {
 .fact--confidence {
     background-image: url('../img/facts/icon_confidence.svg');
 }
-.facts__subhead {}
+.facts__subhead {
+}
 
 .fact__blurb, .why__blurb {
     max-width: 320px;

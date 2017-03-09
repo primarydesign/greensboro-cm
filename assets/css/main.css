@@ -114,7 +114,7 @@ body, html {
   text-decoration: none;
   font-weight: 700;
   border: 1px solid #fff;
-  background: #f99f38;
+  background: #b3c022;
   transition: background .25s;
 }
 @media (min-width: 1280px) {
@@ -127,7 +127,7 @@ body, html {
 
 /* line 106, ../../sass/main.scss */
 .nav__donate-button:hover {
-  background: #005dac;
+  background: #f99f38;
 }
 
 /* line 109, ../../sass/main.scss */
@@ -173,12 +173,18 @@ body, html {
 /* line 134, ../../sass/main.scss */
 .header__play-logo {
   display: block;
-  margin: 300px auto;
+  margin: 25% auto;
   width: 100%;
   max-width: 500px;
 }
+@media (min-width: 960px) {
+  /* line 134, ../../sass/main.scss */
+  .header__play-logo {
+    margin: 300px auto;
+  }
+}
 
-/* line 140, ../../sass/main.scss */
+/* line 143, ../../sass/main.scss */
 .header__button {
   background: none;
   border: 1px solid #fff;
@@ -186,11 +192,11 @@ body, html {
   max-width: 200px;
   margin: 15px 3%;
 }
-/* line 146, ../../sass/main.scss */
+/* line 149, ../../sass/main.scss */
 .header__button:hover {
   background: #005dac;
 }
-/* line 149, ../../sass/main.scss */
+/* line 152, ../../sass/main.scss */
 .header__button span {
   display: inline-block;
   width: auto;
@@ -198,38 +204,43 @@ body, html {
   font-weight: 700;
 }
 
-/* line 160, ../../sass/main.scss */
+/* line 163, ../../sass/main.scss */
 .section--videos {
   background: #b3c022;
 }
 
-/* line 164, ../../sass/main.scss */
+/* line 167, ../../sass/main.scss */
 .videos__list-item {
   display: inline-block;
   margin-bottom: 60px;
 }
 @media (min-width: 960px) {
-  /* line 164, ../../sass/main.scss */
+  /* line 167, ../../sass/main.scss */
   .videos__list-item {
     width: 33%;
   }
 }
 
-/* line 171, ../../sass/main.scss */
+/* line 174, ../../sass/main.scss */
 .videos__video {
   height: auto;
   width: 95%;
   max-width: 1280px;
 }
 
-/* line 181, ../../sass/main.scss */
+/* line 180, ../../sass/main.scss */
+.section--facts .section__headline {
+  padding-top: 100px;
+}
+
+/* line 188, ../../sass/main.scss */
 .facts__list, .why__list {
   max-width: 960px;
   margin: 0 auto;
   font-size: 0;
 }
 
-/* line 186, ../../sass/main.scss */
+/* line 193, ../../sass/main.scss */
 .facts__list-item, .why__list-item {
   display: inline-block;
   min-height: 175px;
@@ -242,61 +253,61 @@ body, html {
   background-size: 75px;
 }
 @media (min-width: 960px) {
-  /* line 186, ../../sass/main.scss */
+  /* line 193, ../../sass/main.scss */
   .facts__list-item, .why__list-item {
     width: 27%;
   }
 }
 
-/* line 200, ../../sass/main.scss */
+/* line 207, ../../sass/main.scss */
 .fact--physical {
   background-image: url("../img/facts/icon_physical.svg");
 }
 
-/* line 203, ../../sass/main.scss */
+/* line 210, ../../sass/main.scss */
 .fact--reding {
   background-image: url("    ../img/facts/icon_reading.svg");
 }
 
-/* line 206, ../../sass/main.scss */
+/* line 213, ../../sass/main.scss */
 .fact--social {
   background-image: url("../img/facts/icon_social.svg");
 }
 
-/* line 209, ../../sass/main.scss */
+/* line 216, ../../sass/main.scss */
 .fact--vocab {
   background-image: url("../img/facts/icon_vocabulary.svg");
 }
 
-/* line 212, ../../sass/main.scss */
+/* line 219, ../../sass/main.scss */
 .fact--creativity {
   background-image: url("../img/facts/icon_creativity.svg");
 }
 
-/* line 215, ../../sass/main.scss */
+/* line 222, ../../sass/main.scss */
 .fact--confidence {
   background-image: url("../img/facts/icon_confidence.svg");
 }
 
-/* line 220, ../../sass/main.scss */
+/* line 228, ../../sass/main.scss */
 .fact__blurb, .why__blurb {
   max-width: 320px;
   font-size: 1.1rem;
 }
 
-/* line 224, ../../sass/main.scss */
+/* line 232, ../../sass/main.scss */
 .section--why {
   background: #b3c022;
 }
 
-/* line 234, ../../sass/main.scss */
+/* line 242, ../../sass/main.scss */
 .donate__form {
   max-width: 960px;
   font-size: 0;
   margin: 0 auto;
 }
 
-/* line 239, ../../sass/main.scss */
+/* line 247, ../../sass/main.scss */
 .donate__label {
   display: inline-block;
   width: 90%;
@@ -311,20 +322,20 @@ body, html {
   text-transform: uppercase;
 }
 @media (min-width: 640px) {
-  /* line 239, ../../sass/main.scss */
+  /* line 247, ../../sass/main.scss */
   .donate__label {
     width: 43%;
     margin: 0 3% 15px 3%;
   }
 }
 @media (min-width: 960px) {
-  /* line 239, ../../sass/main.scss */
+  /* line 247, ../../sass/main.scss */
   .donate__label {
     width: 27%;
   }
 }
 
-/* line 259, ../../sass/main.scss */
+/* line 267, ../../sass/main.scss */
 .donate__input {
   display: block;
   height: 30px;
@@ -336,26 +347,26 @@ body, html {
 }
 
 @media (max-width: 960px) {
-  /* line 268, ../../sass/main.scss */
+  /* line 276, ../../sass/main.scss */
   .label--exp, .label--cvc {
     width: 44%;
   }
 }
 
-/* line 273, ../../sass/main.scss */
+/* line 281, ../../sass/main.scss */
 .input--expmonth, .input--expyear {
   width: 60px;
   margin-right: 5px;
   display: inline;
 }
 
-/* line 278, ../../sass/main.scss */
+/* line 286, ../../sass/main.scss */
 .input--expyear, .input--cvc {
   width: 80px;
   margin-right: 15px;
 }
 
-/* line 282, ../../sass/main.scss */
+/* line 290, ../../sass/main.scss */
 .donate__submit-button {
   width: 90%;
   border: 0;
@@ -364,13 +375,13 @@ body, html {
   background: #f99f38;
 }
 @media (min-width: 640px) {
-  /* line 282, ../../sass/main.scss */
+  /* line 290, ../../sass/main.scss */
   .donate__submit-button {
     width: 27%;
   }
 }
 
-/* line 293, ../../sass/main.scss */
+/* line 301, ../../sass/main.scss */
 .thanks__blurb {
   padding-top: 150px;
   background: url(../img/trophy.svg) no-repeat 50% 0;
@@ -379,21 +390,21 @@ body, html {
   letter-spacing: 1px;
 }
 
-/* line 300, ../../sass/main.scss */
+/* line 308, ../../sass/main.scss */
 .footer__social-icons {
   list-style-type: none;
   margin: 15px auto;
   padding: 0;
 }
 
-/* line 305, ../../sass/main.scss */
+/* line 313, ../../sass/main.scss */
 .footer__social-icon {
   display: inline-block;
   width: 25px;
   padding: 10px;
 }
 
-/* line 310, ../../sass/main.scss */
+/* line 318, ../../sass/main.scss */
 .footer__blurb {
   padding: 0;
   letter-spacing: 1px;
@@ -401,7 +412,7 @@ body, html {
   font-size: .85em;
 }
 
-/* line 317, ../../sass/main.scss */
+/* line 325, ../../sass/main.scss */
 .fixed {
   position: fixed;
   width: 100%;
