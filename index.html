@@ -5,6 +5,7 @@
   <meta charset="utf-8">
 
   <title>Give Play For Good - Greensboro Children's Museum</title>
+  <meta name="viewport" content="width=device-width">
   <meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
   <meta name="author" content="Primary Design">
 
@@ -17,21 +18,22 @@
 
 <body >
 <div id="video" data-vide-bg="assets/video/reel" data-vide-options="position: 50% 0%">    
-    <nav class="section nav" style="background:rgba(0,0,0,0.2);min-height:20vh">
-    </nav>
     <header class="section header" style="background:rgba(0,0,0,0.2);min-height:55vh">
         <img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg">
-        
-        <p class="blurb header__blurb">
-        We made a series of videos on how play benefits kids in unexpected ways. Donating to our museum will help kids in your community develop skills for life!
-        </p>
-        <a class="button nav__donate-button" href="#donate">Donate</a>
-        
+        <a class="button header__button" href="">Play For<br><span>Literacy</span></a>
+        <a class="button header__button" href="">Play For<br><span>Fine Motor Skills</span></a>
+        <a class="button header__button" href="">Play For<br><span>Social Skills</span></a>
     </header>
 </div>    
-    <nav class="section nav">
-        <img class="nav__logo" alt="Greensboro Children's Museum" src="assets/img/greensboro-childrens-museum_logo.svg">
+    <nav id="stickyheader" class="nav">
+        <img class="nav__logo" alt="Greensboro Children's Museum" src="assets/img/greensboro-childrens-museum_logo-white.svg">
+        <p class="blurb nav__blurb">
+            <span class="nav__blurb--small">Did you know play has lifelong impact?</span>
+            <br/>Give $10 and help more kids today.</p>
+        <br>
+        <a class="button nav__donate-button" href="#donate">Donate Now</a>
     </nav>
+    <!--
     <section class="section section--videos">
         <h2  class="section__headline">Watch Our Videos</h2>
         <ul class="list videos__list">
@@ -55,9 +57,9 @@
             </li>            
         </ul>
     </section>
+    -->
     <section class="section section--facts">
         <h2 class="section__headline">Facts About Play</h2>
-        <p class="blurb facts__blurb">Studies show play is an essential part of early childhood development. While playing, kids build cognitive skills, vocabulary, literacy, gross and fine motor skills and socialization.</p>
         <ul class="list facts__list">
             <li class="facts__list-item fact--physical">
                 <h3 class="subhead facts__subhead">Physical Abilities</h3>
@@ -196,7 +198,12 @@
         <p class="blurb footer__blurb">&copy; 2017 Greensboro Children's Museum</p>
     </footer>    
 </body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
     <script src="assets/js/jquery.vide.js"></script>
+    <script src="assets/js/sticky-cta.js"></script>
+
 </html>

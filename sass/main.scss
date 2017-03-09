@@ -1,5 +1,5 @@
-
 $blue:   #005dac;
+$ltblue: #006cc7;
 $green:  #b3c022;
 $orange: #f99f38;
 
@@ -20,7 +20,7 @@ body, html {
 .section {
     text-align: center;
     padding: 60px 15px;
-    background-color: $blue;
+    background-color: $ltblue;
 }
 .section__headline {
     color: #fff;
@@ -62,40 +62,101 @@ body, html {
     color: #fff;
     font-family: 'Nunito Sans', sans-serif;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 1px;
 }
 .nav {
-    background: #fff;
-    text-align: center;
+    height: 85px;
+    padding: 10px;
+    z-index: 10;
+    background: $blue;
+    text-align: left;
+    @media (min-width: $large) {
+        height: 150px;
+    }
 }
 .nav__logo {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 225px;
+    float: left;
+    width: 35%;
+    max-height: 80px;
+    @media (min-width: $small) {
+        width: 25%;
+    }
+    @media (min-width: $large) {
+        margin: 0 0 0 10%;
+        padding: 20px 0;
+        max-height: 110px;
+    }
 }
 .nav__donate-button {
+    float: right;
+    margin: 0 4%;
+    padding: 15px 30px;
+    font-size: .85em;
     text-decoration: none;
     font-weight: 700;
+    border: 1px solid #fff;
+    background: $orange;   
+    transition: background .25s;
+    @media (min-width: $large) {
+        margin: 30px 10% 0 0;
+        font-size: 1em;
+    }
 }
 .nav__donate-button:hover {
-    background: $orange;
+    background: $blue;
+}
+.nav__blurb {
+    display: none;
+    @media (min-width: 780px) {
+        display: inline;
+    }
+    @media (min-width: $small) {
+        float: left;
+        margin: 20px 0 0 10px;
+        padding: 0;
+        font-weight: 700;
+        font-size: 1em;
+    }
+    @media (min-width: $large) {
+        margin: 40px auto 0;
+        font-size: 1.5em;
+    }    
+}
+.nav__blurb--small {
+    font-size: .9em;
+    text-transform: uppercase;
+    position: relative;
 }
 .header {
     background: $green;
 }
 .header__play-logo {
     display: block;
-    margin: 0 auto 30px;
+    margin: 300px auto;
     width: 100%;
     max-width: 500px;    
 }
-
-.header__blurb {
-    font-size: 1.75rem;
-    font-weight: 700;
+.header__button {
+    background: none;
+    border: 1px solid #fff;
+    width: 60%;
+    max-width: 200px;
+    margin: 15px 3%;
+    &:hover {
+        background: $blue;
+    }
+    span {
+        display: inline-block;
+        width: auto;
+        font-size: 1.1em;
+        font-weight: 700;
+    }
 }
-
+.header__blurb {
+    //font-size: 1.75rem;
+    //font-weight: 700;
+}
 .section--videos {
     background: $green;     
 }
@@ -112,11 +173,10 @@ body, html {
     width: 95%;
     max-width: 1280px;
 }
-
 .section--facts {}
 .facts__blurb {
-    padding-bottom: 60px;
-    font-size: 1.5rem;
+    //padding-bottom: 60px;
+    //font-size: 1.5rem;
 }
 .facts__list, .why__list {
     max-width: 960px;
@@ -252,4 +312,11 @@ body, html {
     letter-spacing: 1px;
     font-weight: 400;
     font-size: .85em;
+}
+
+.fixed {
+  position:fixed;
+  width: 100%;
+  margin-top: 0;
+  top:0;
 }
