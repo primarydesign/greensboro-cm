@@ -137,7 +137,7 @@ body, html {
     width: 100%;
     max-width: 500px;
     @media (min-width: $medium) {
-        margin: 300px auto;
+        margin: 250px auto;
     }
 }
 .header__button {
@@ -156,12 +156,15 @@ body, html {
         font-weight: 700;
     }
 }
-.header__blurb {
-    //font-size: 1.75rem;
-    //font-weight: 700;
+#video {
+    background: $blue;
+    z-index: -2;
 }
-.section--videos {
-    background: $green;     
+.section__headline--video {
+    font-size: 2em;
+    letter-spacing: 2px;
+    padding: 30px;
+    margin: 0;
 }
 .videos__list {}
 .videos__list-item {
@@ -178,12 +181,8 @@ body, html {
 }
 .section--facts {
     .section__headline {
-        padding-top: 100px;   
+        padding-top: 50px;   
     }
-}
-.facts__blurb {
-    //padding-bottom: 60px;
-    //font-size: 1.5rem;
 }
 .facts__list, .why__list {
     max-width: 960px;
