@@ -9,7 +9,6 @@
  * http://www.codrops.com
  */
 ;( function( window ) {
-	
 	'use strict';
 
 	var transEndEventNames = {
@@ -59,13 +58,22 @@
 
 	UIMorphingButton.prototype._initEvents = function() {
 		var self = this;
+		console.log(self)
+
 		// open
-		this.button.addEventListener( 'click', function() { self.toggle(); } );
+		this.button.addEventListener( 'click', function() { self.toggle();
+		
+			console.log(self)
+		} );
 		// close
 		if( this.options.closeEl !== '' ) {
 			var closeEl = this.el.querySelector( this.options.closeEl );
 			if( closeEl ) {
-				closeEl.addEventListener( 'click', function() { self.toggle(); } );
+				closeEl.addEventListener( 'click', function() { 
+					
+				console.log(self)
+
+					self.toggle(); } );
 			}
 		}
 	}

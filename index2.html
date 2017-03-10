@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Give Play For Good - Greensboro Children's Museum</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
+  <meta name="author" content="Primary Design">
+
+ <!--<link rel="stylesheet" href="assets/css/main.css">-->
+
+
+
+		<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/content.css" />
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+	<body>
+
+
+		<div class="container">
+			<section>
+				<div class="mockup-content">
+						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close1">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						<div class="morph-button morph-button2 morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video2</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close2">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						<div class="morph-button morph-button3 morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video3</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close3">Close the dialog</span>
+										<div class="video-mockup"></div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						
+				</div><!-- /form-mockup -->
+			</section>
+		</div><!-
+</body>
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/jquery.vide.js"></script>
+    <script src="assets/js/sticky-cta.js"></script>
+
+	<script src="ButtonComponentMorph/js/modernizr.custom.js"></script>
+	<script src="ButtonComponentMorph/js/classie.js"></script>
+	<script src="ButtonComponentMorph/js/uiMorphingButton_fixed.js"></script>
+
+
+
+	<script>
+
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button' ), {
+				closeEl : '.icon-close1'
+			} );
+		})();
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button2' ), {
+				closeEl : '.icon-close2'
+			} );
+		})();
+
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button3' ), {
+				closeEl : '.icon-close3'
+			} );
+		})();
+
+
+	console.log('yo')
+	jQuery( document ).ready(function($) {
+   		$('.butt on').click(function(e) {
+			e.preventDefault();
+			console.log('sup');
+        		$('.videos__video').paused ? $('.videos__video').play() : $('.videos__video').pause();
+    		});
+	});
+	</script>
+
+</html>

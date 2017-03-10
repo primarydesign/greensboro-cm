@@ -2,18 +2,33 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>Give Play For Good - Greensboro Children's Museum</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
-  <meta name="author" content="Primary Design">
+	<title>Give Play For Good - Greensboro Children's Museum</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
+	<meta name="author" content="Primary Design">
 
-  <link rel="stylesheet" href="assets/css/main.css">
+
+
+	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/content.css" />
+<!--<link rel="stylesheet" href="assets/css/main.css">-->
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+<style>
+
+.container{
+	position:relative;
+	z-index:9999999999;
+}
+
+</style>
 </head>
 
 <body >
@@ -21,9 +36,99 @@
     <header class="section header" style="background:rgba(0,0,0,0.2);min-height:55vh">
         <img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg">
         <h3 class="section__headline section__headline--video">WATCH:</h3>
-        <a class="button header__button" href="">Play For<br><span>Literacy</span></a>
+
+
+
+
+	<a class="button header__button" href="">Play For<br><span>Literacy</span></a>
         <a class="button header__button" href="">Play For<br><span>Fine Motor Skills</span></a>
         <a class="button header__button" href="">Play For<br><span>Social Skills</span></a>
+
+
+		<div class="container">
+			<section>
+				<div class="mockup-content">
+						<div class="morph-button morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close1">Close the dialog</span>
+										<div class="video-mockup">
+										
+										        <video class="videos__video" width="1280" height="720" controls>
+                  										<source src="assets/video/basket.mp4" type="video/mp4">
+                  										Your browser does not support the video tag.
+              									 	</video>     
+										
+										</div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						<div class="morph-button  morph-button2 morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video2</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close2">Close the dialog</span>
+										<div class="video-mockup">
+										
+										        <video class="videos__video" width="1280" height="720" controls>
+												<source src="assets/video/crossword.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>     
+										</div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						<div class="morph-button  morph-button3 morph-button-modal morph-button-modal-4 morph-button-fixed">
+							<button type="button">Watch the Video3</button>
+							
+							<div class="morph-content">
+								<span class="morph-clone">01:43</span>
+								<div>
+									<div class="content-style-video">
+										<span class="icon icon-close icon-close3">Close the dialog</span>
+										<div class="video-mockup">
+										
+										        <video class="videos__video" width="1280" height="720" controls>
+												<source src="assets/video/soccer.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>     										
+										
+										</div>
+										<div class="controls">
+											<span class="icon icon-pause">Pause</span>
+											<span class="time">00:00</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
+						
+				</div><!-- /form-mockup -->
+			</section>
+		</div><!-
+
+
+
+
+
+
     </header>
 </div>    
     <nav id="stickyheader" class="nav menu">
@@ -209,5 +314,42 @@
     <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
     <script src="assets/js/jquery.vide.js"></script>
     <script src="assets/js/sticky-cta.js"></script>
+
+	<script src="ButtonComponentMorph/js/modernizr.custom.js"></script>
+	<script src="ButtonComponentMorph/js/classie.js"></script>
+	<script src="ButtonComponentMorph/js/uiMorphingButton_fixed.js"></script>
+
+
+
+	<script>
+
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button' ), {
+				closeEl : '.icon-close1'
+			} );
+		})();
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button2' ), {
+				closeEl : '.icon-close2'
+			} );
+		})();
+
+		(function() {
+			new UIMorphingButton( document.querySelector( '.morph-button3' ), {
+				closeEl : '.icon-close3'
+			} );
+		})();
+
+
+	console.log('yo')
+
+
+    $('.videos__video, .videos__video1, .videos__video2').click(function() {
+        this.paused ? this.play() : this.pause();
+    });
+
+
+
+	</script>
 
 </html>
