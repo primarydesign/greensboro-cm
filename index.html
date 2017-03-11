@@ -15,12 +15,17 @@
 	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/component.css" />
 	<link rel="stylesheet" type="text/css" href="ButtonComponentMorph/css/content.css" />
-<!--<link rel="stylesheet" href="assets/css/main.css">-->
 
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="sly/sly.css">
+		
+
+	<link rel="stylesheet" href="assets/css/main.css"> <!--fix this file-->
+
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
 <style>
 
 .container{
@@ -34,7 +39,21 @@
 <body >
 <div id="video" data-vide-bg="assets/video/reel" data-vide-options="position: 50% 0%">    
     <header class="section header" style="background:rgba(0,0,0,0.2);min-height:55vh">
-        <img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg">
+	<!--<button id="gallery_btn-prev"><img class="gallery_arrow"/>prev</button>
+	<span id="middleSpan"></span>
+	<button id="gallery_btn-next"><img class="gallery_arrow"/>next</button>-->
+
+	<span id="" class="sly">
+		<ul>
+			<li><img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg" /> </li>
+			<li><img class="header__play-logo" alt="Give Play For Good" src="assets/img/headline_motor-skills.svg" /> </li>
+			<li><img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg" /> </li>
+			<li><img class="header__play-logo" alt="Give Play For Good" src="assets/img/headline_motor-skills.svg" /> </li>
+
+		</ul>
+	</span>
+
+
         <h3 class="section__headline section__headline--video">WATCH:</h3>
 
 
@@ -193,34 +212,22 @@
             </li>            
         </ul>
     </section>
-    <!--
         <section class="section section--why">
         <h2 class="section__headline">What Your Donation Does</h2>        
         <ul class="list why__list">
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Physical Abilities</h3>
-                <p class="blurb why__blurb">Play helps develop hand-eye coordination, dexterity and overall physical health.</p>
+            <li class="why__list-item climber">
+                <h3 class="subhead why__subhead">Outdoor Play Plaza</h3>
+                <p class="blurb why__blurb">State-of-the-art outdoor play plaza featuring dome climbers that connect to an outdoor classroom for sunny day fun and learning</p>
             </li>
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Reading</h3>
-                <p class="blurb why__blurb">Play helps kids learn to read at an earlier age.</p>
+            <li class="why__list-item waterdrop">
+                <h3 class="subhead why__subhead">Water Wonders</h3>
+                <p class="blurb why__blurb">New Water Wonders interactive exhibit providing a captivating sensory experience</p>
             </li>
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Social Skills</h3>
-                <p class="blurb why__blurb">Play helps kids make firends and develop social skills that will benefit them into adulthood.</p>
+            <li class="why__list-item tech">
+                <h3 class="subhead why__subhead">Tech Center</h3>
+                <p class="blurb why__blurb">New collaborative children's technology center offering developmentally appropriate activities</p>
             </li>            
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Vocabulary</h3>
-                <p class="blurb why__blurb">Play helps develop hand-eye coodination, dexterity and overall physical health.</p>
-            </li>
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Creativity</h3>
-                <p class="blurb why__blurb">Play helps develop creativity and problem-solving skills.</p>
-            </li>
-            <li class="why__list-item">
-                <h3 class="subhead why__subhead">Physical Abilities</h3>
-                <p class="blurb why__blurb">Play helps develop hand-eye coordination, dexterity and overall physical health.</p>
-            </li>            
+           
         </ul>    
     </section>
 
@@ -318,6 +325,8 @@
 	<script src="ButtonComponentMorph/js/modernizr.custom.js"></script>
 	<script src="ButtonComponentMorph/js/classie.js"></script>
 	<script src="ButtonComponentMorph/js/uiMorphingButton_fixed.js"></script>
+	<script src="sly/sly.js"></script>
+	
 
 
 

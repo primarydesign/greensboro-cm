@@ -197,11 +197,20 @@ body, html {
     vertical-align: top;
     font-size: 1rem;
     border-radius: 10px;
-    background: url('../img/trophy.svg') no-repeat 50% 30px;
     background-size: 75px;
     @media (min-width: $medium) {
         width: 27%;
-    }     
+    }
+}
+
+.climber{
+    background: url('../img/Climber.svg') no-repeat 50% 30px;
+}
+.waterdrop{
+    background: url('../img/WaterDrop.svg') no-repeat 50% 30px;
+}
+.tech{
+    background: url('../img/Tech.svg') no-repeat 50% 30px;
 }
 .fact--physical {
     background-image: url('../img/facts/icon_physical.svg');
