@@ -8,11 +8,12 @@ $medium: 960px;
 $large:  1280px;
 
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700');
+@import 'normalize';
+@import 'modal';
 
 body, html {
     margin: 0;
     padding: 0;
-    box-sizing: padding-box;
     font-size: 16px;
     height: 100%;
     width: 100%;
@@ -64,6 +65,7 @@ body, html {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
+    z-index: 3;
 }
 .nav {
     height: 85px;
@@ -140,14 +142,12 @@ body, html {
         margin: 250px auto;
     }
 }
-.header__button {
-    background: none;
+.header__button  {
     border: 1px solid #fff;
-    width: 60%;
-    max-width: 200px;
     margin: 15px 3%;
     &:hover {
-        background: $blue;
+        background: $orange;
+        transition: background .25s;
     }
     span {
         display: inline-block;
@@ -157,8 +157,12 @@ body, html {
     }
 }
 #video {
-    background: $blue;
-    z-index: -2;
+    //background: $blue;
+    //z-index: -2;
+   .header {
+      background:rgba(0,0,0,0.2);
+      min-height:55vh
+   }
 }
 .section__headline--video {
     font-size: 2em;
@@ -176,7 +180,7 @@ body, html {
 }
  .videos__video {
     height: auto;
-    width: 95%;
+    width: 100%;
     max-width: 1280px;
 }
 .section--facts {
@@ -207,7 +211,7 @@ body, html {
     background-image: url('../img/facts/icon_physical.svg');
 }
 .fact--reding {
-    background-image: url('    ../img/facts/icon_reading.svg');
+    background-image: url('../img/facts/icon_reading.svg');
 }
 .fact--social {
  background-image: url('../img/facts/icon_social.svg');    
@@ -231,7 +235,15 @@ body, html {
 .section--why {
     background: $green; 
 }
-
+.icon--play-plaza {
+   background-image: url('../img/why/icon_play-plaza.svg');
+}
+.icon--water-wonders {
+   background-image: url('../img/why/icon_water-wonders.svg');
+}
+.icon--tech-center {
+   background-image:url('../img/why/icon_tech-center.svg');
+}
 .why__list {}
 .why__list-item {}
 .why__subhead {}
@@ -303,6 +315,10 @@ body, html {
     background-size: 125px;
     font-size: 1.5rem;
     letter-spacing: 1px;
+}
+.footer__donate-button {
+   background: $orange;
+   font-weight: 700;
 }
 .footer__social-icons {
     list-style-type: none;

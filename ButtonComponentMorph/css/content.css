@@ -40,22 +40,10 @@
 	content: "\e601";
 }
 
-.icon-play::before {
-	content: "\e602";
-}
-
-.icon-pause::before {
-	content: "\e603";
-}
-
 .icon-close {
 	position: absolute;
 	top: 20px;
 	right: 20px;
-}
-
-.icon-close:hover {
-	color: #a50a05;
 }
 
 /* Style for overlay */
