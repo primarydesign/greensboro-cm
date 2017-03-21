@@ -98,7 +98,7 @@ body, html {
     text-decoration: none;
     font-weight: 700;
     border: 1px solid #fff;
-    background: $green;   
+    background: $green;
     transition: background .25s;
     @media (min-width: $large) {
         margin: 30px 16% 0 0;
@@ -123,7 +123,7 @@ body, html {
     @media (min-width: $large) {
         margin: 40px auto 0;
         font-size: 1.5em;
-    }    
+    }
 }
 .nav__blurb--small {
     font-size: .9em;
@@ -179,16 +179,17 @@ body, html {
     margin-bottom: 60px;
     @media (min-width: $medium) {
         width: 33%;
-    } 
+    }
 }
  .videos__video {
     height: auto;
     width: 100%;
     max-width: 1280px;
+    max-height: 100vh;
 }
 .section--facts {
     .section__headline {
-        padding-top: 50px;   
+        padding-top: 50px;
     }
 }
 .facts__list, .why__list {
@@ -199,8 +200,8 @@ body, html {
 .facts__list-item, .why__list-item  {
     display: inline-block;
     min-height: 175px;
-    padding: 85px 1.5% 0;    
-    margin: 1.5%;    
+    padding: 85px 1.5% 0;
+    margin: 1.5%;
     vertical-align: top;
     font-size: 1rem;
     border-radius: 10px;
@@ -208,7 +209,7 @@ body, html {
     background-size: 75px;
     @media (min-width: $medium) {
         width: 27%;
-    }     
+    }
 }
 .fact--physical {
     background-image: url('../img/facts/icon_physical.svg');
@@ -217,7 +218,7 @@ body, html {
     background-image: url('../img/facts/icon_reading.svg');
 }
 .fact--social {
- background-image: url('../img/facts/icon_social.svg');    
+ background-image: url('../img/facts/icon_social.svg');
 }
 .fact--vocab {
     background-image: url('../img/facts/icon_vocabulary.svg');
@@ -233,7 +234,7 @@ body, html {
     font-size: 1.1rem;
 }
 .section--why {
-    background: $green; 
+    background: $green;
 }
 .icon--play-plaza {
    background-image: url('../img/why/icon_play-plaza.svg');

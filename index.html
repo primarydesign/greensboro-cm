@@ -27,7 +27,7 @@
       ga('create', 'UA-93598680-1', 'auto');
       ga('send', 'pageview');
     </script>
-    
+
     <!-- FACEBOOK TACKING PIXEL -->
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,7 +42,7 @@
 </head>
 
 <body>
-<div id="video" data-vide-bg="assets/video/reel" poster="assets/video/basket.jpg" data-vide-options="position: 50% 0%">    
+<div id="video" data-vide-bg="assets/video/reel" poster="assets/video/basket.jpg" data-vide-options="position: 50% 0%">
     <header class="section header">
         <img class="header__play-logo" alt="Give Play For Good" src="assets/img/give-play-for-good_logo.svg">
         <h3 class="section__headline section__headline--video">WATCH:</h3>
@@ -56,10 +56,10 @@
                                <video class="videos__video" width="1280" height="720" controls>
                                  <source src="assets/video/crossword.mp4" type="video/mp4">
                                  Your browser does not support the video tag.
-                               </video> 
+                               </video>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="morph-button morph-button2 morph-button-modal morph-button-modal-4 morph-button-fixed">
                 <button class="button header__button" type="button" href="/">Play For<br><span>Fine Motor Skills</span></button>
@@ -70,10 +70,10 @@
                                <video class="videos__video" width="1280" height="720" poster="assets/video/reel.jpg" controls>
                                  <source src="assets/video/basket.mp4" type="video/mp4">
                                  Your browser does not support the video tag.
-                               </video> 
+                               </video>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
             <div class="morph-button morph-button3 morph-button-modal morph-button-modal-4 morph-button-fixed">
                 <button class="button header__button" type="button" href="/">Play For<br><span>Social Skills</span></button>
@@ -84,14 +84,14 @@
                                <video class="videos__video" width="1280" height="720" controls>
                                  <source src="assets/video/soccer.mp4" type="video/mp4">
                                  Your browser does not support the video tag.
-                               </video> 
+                               </video>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
-         </div>  
+         </div>
     </header>
-</div>    
+</div>
     <nav id="stickyheader" class="nav menu">
         <img class="nav__logo" alt="Greensboro Children's Museum" src="assets/img/greensboro-childrens-museum_logo-white.svg">
         <p class="blurb nav__blurb">
@@ -114,7 +114,7 @@
             <li class="facts__list-item fact--social">
                 <h3 class="subhead facts__subhead">Social Skills</h3>
                 <p class="blurb fact__blurb">Play helps kids make friends and develop social skills that will benefit them into adulthood.</p>
-            </li>            
+            </li>
             <li class="facts__list-item fact--vocab">
                 <h3 class="subhead facts__subhead">Vocabulary</h3>
                 <p class="blurb fact__blurb">Play helps increase their vocabulary and deepens their understanding of complex words and concepts.</p>
@@ -126,7 +126,7 @@
             <li class="facts__list-item fact--confidence">
                 <h3 class="subhead facts__subhead">Confidence</h3>
                 <p class="blurb fact__blurb">Play helps increase confidence and develop better self-esteem in children.</p>
-            </li>            
+            </li>
         </ul>
     </section>
     <section class="section section--why">
@@ -144,8 +144,8 @@
             <li class="why__list-item icon--tech-center">
                 <h3 class="subhead why__subhead">Tech Center</h3>
                 <p class="blurb why__blurb">New collaborative children’s technology center offering developmentally appropriate activities</p>
-            </li>                    
-        </ul>    
+            </li>
+        </ul>
     </section>
     <footer class="section footer">
         <a class="button footer__donate-button" href="https://sales.gcmuseum.com/donation.aspx" target="_blank">Donate Today</a>
@@ -174,7 +174,7 @@
                 <a href="https://www.instagram.com/greensborochildrensmuseum/" target="_blank">
                     <img src="assets/img/social/icon_instagram.svg" />
                 </a>
-            </li>            
+            </li>
         </ul>
         <p class="blurb footer__blurb">&copy; 2017 Greensboro Children's Museum</p>
     </footer>
@@ -187,8 +187,8 @@
           ga('send','event','button','click','donate today');
         });
       });
-    </script>    
-</body>    
+    </script>
+</body>
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/jquery.vide.js"></script>
     <script src="assets/js/sticky-cta.js"></script>
@@ -211,15 +211,42 @@
 				closeEl : '.icon-close3'
 			} );
 		})();
-       
-       
-       
+
+/*
+    $('::before').click(function(){
+
+        console.log('yo')
+    })
+
+      $('body:not(.icon-close)').click(function(e){
+          console.log(e.target.className)
+          console.log($(e.target).hasClass('icon-close'))
+          if(e.target.className != 'videos__video' && e.target.className != 'button header__button'){
+              //$('.icon-close').trigger('click');
+              $(this).find('.videos__video')[0].pause()
+              //$(this).find('.icon-close').trigger('click')
+          }
+
+      })
+      */
+
+    /*  $('body').mouseup(function(e){
+
+      console.log($(e.target).hasClass('open') || $(e.target).hasClass('icon-close'))
+      console.log()
+        if($(e.target).hasClass('open') || $(e.target).hasClass('icon-close')){
+            console.log(e);
+            console.log(this)
+          //$(this).find('.icon-close').trigger('click')
+
+        }
+    })*/
        $('.icon-close').on('click', function(e){
+         $(this).parent().find('video')[0].pause()
        })
-       $('button.header__button').on('click', function(e){
-            console.log('hi')
-          window.vid = $('video');
+       $('.morph-button').on('click', function(e){
+            $(this).find('video')[0].play()
        })
 	</script>
-   
+
 </html>
