@@ -82,10 +82,10 @@ body, html {
     width: 35%;
     max-height: 80px;
     @media (min-width: $small) {
-        width: 25%;
+        width: 15%;
     }
     @media (min-width: $large) {
-        margin: 0 0 0 10%;
+        margin: 0 0 0 12%;
         padding: 20px 0;
         max-height: 110px;
     }
@@ -101,7 +101,7 @@ body, html {
     background: $green;   
     transition: background .25s;
     @media (min-width: $large) {
-        margin: 30px 10% 0 0;
+        margin: 30px 16% 0 0;
         font-size: 1em;
     }
 }
@@ -139,7 +139,7 @@ body, html {
     width: 100%;
     max-width: 500px;
     @media (min-width: $medium) {
-        margin: 250px auto;
+        margin: 150px auto;
     }
 }
 .header__video-buttons {

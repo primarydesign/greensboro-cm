@@ -2,22 +2,43 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <title>Give Play For Good - Greensboro Children's Museum</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
+    <meta name="author" content="Greensboro Children's Museum">
 
-  <title>Give Play For Good - Greensboro Children's Museum</title>
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
-  <meta name="author" content="Greensboro Children's Museum">
+    <meta property="og:title" content="Give Play For Good - Greensboro Children's Museum">
+    <meta property="og:description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
+    <meta property="og:image" content="http://GivePlayForGood.org/assets/video/reel.jpg">
+    <meta property="og:url" content="http://GivePlayForGood.org">
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
 
-  <meta property="og:title" content="Give Play For Good - Greensboro Children's Museum">
-  <meta property="og:description" content="Donate to the Greensboro Children's Museum and Give Play For Good">
-  <meta property="og:image" content="http://GivePlayForGood.org/assets/video/reel.jpg">
-  <meta property="og:url" content="http://GivePlayForGood.org">
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image">
-   
-  <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/modernizr.custom.js"></script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-93598680-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    <!-- FACEBOOK TACKING PIXEL -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1211778998920485'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1211778998920485&ev=PageView&noscript=1"/></noscript>
 </head>
 
 <body>
@@ -127,7 +148,7 @@
         </ul>    
     </section>
     <footer class="section footer">
-         <a class="button footer__donate-button" href="https://sales.gcmuseum.com/donation.aspx" target="_blank">Donate Today</a>
+        <a class="button footer__donate-button" href="https://sales.gcmuseum.com/donation.aspx" target="_blank">Donate Today</a>
         <ul class="footer__social-icons">
             <li class="footer__social-icon">
                 <a href="https://www.facebook.com/The-Greensboro-Childrens-Museum-119534706491/?ref=nf" target="_blank">
@@ -156,8 +177,18 @@
             </li>            
         </ul>
         <p class="blurb footer__blurb">&copy; 2017 Greensboro Children's Museum</p>
-    </footer>    
-</body>
+    </footer>
+    <script>
+      window.addEventListener('load',function(){
+        jQuery('a:contains("Donate Now")').click(function(){
+          ga('send','event','button','click','donate now');
+        });
+        jQuery('a:contains("Donate Today")').click(function(){
+          ga('send','event','button','click','donate today');
+        });
+      });
+    </script>    
+</body>    
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/jquery.vide.js"></script>
     <script src="assets/js/sticky-cta.js"></script>
