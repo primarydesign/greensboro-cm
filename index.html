@@ -212,40 +212,14 @@
 			} );
 		})();
 
-/*
-    $('::before').click(function(){
 
-        console.log('yo')
-    })
 
-      $('body:not(.icon-close)').click(function(e){
-          console.log(e.target.className)
-          console.log($(e.target).hasClass('icon-close'))
-          if(e.target.className != 'videos__video' && e.target.className != 'button header__button'){
-              //$('.icon-close').trigger('click');
-              $(this).find('.videos__video')[0].pause()
-              //$(this).find('.icon-close').trigger('click')
-          }
-
-      })
-      */
-
-    /*  $('body').mouseup(function(e){
-
-      console.log($(e.target).hasClass('open') || $(e.target).hasClass('icon-close'))
-      console.log()
-        if($(e.target).hasClass('open') || $(e.target).hasClass('icon-close')){
-            console.log(e);
-            console.log(this)
-          //$(this).find('.icon-close').trigger('click')
-
-        }
-    })*/
        $('.icon-close').on('click', function(e){
          $(this).parent().find('video')[0].pause()
+         //$(this).parent().find('video')[0].currentTime = 0; uncomment this to start from the beginning
        })
-       $('.morph-button').on('click', function(e){
-            $(this).find('video')[0].play()
+       $('.header__button').on('click', function(e){
+         $(this).parent().find('video')[0].play()
        })
 	</script>
 
