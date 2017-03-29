@@ -127,35 +127,81 @@ body, html {
 }
 @keyframes bgbox {
   0% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
     background-size: cover;
     background-repeat: no-repeat;  
   }
-  25% {
-    background: url(../img/slider/soccer-ball.jpg);
+  10% {
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg), url(../img/slider/greensboro-childrens-museum_arts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+  }  
+  15% {
+    background: url(../img/slider/greensboro-childrens-museum_arts.jpg);
     background-size: cover;
     background-repeat: no-repeat;      
-  }  
-  50% {
-    background: url(../img/slider/soccer-ball.jpg);
+  } 
+  25% {
+    background: url(../img/slider/greensboro-childrens-museum_arts.jpg), url(../img/slider/greensboro-childrens-museum_playground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }   
+  30% {
+    background: url(../img/slider/greensboro-childrens-museum_playground.jpg);
     background-size: cover;
     background-repeat: no-repeat;      
   }
+  40% {
+    background: url(../img/slider/greensboro-childrens-museum_playground.jpg), url(../img/slider/greensboro-childrens-museum_cooking-class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }  
+  45% {
+    background: url(../img/slider/greensboro-childrens-museum_cooking-class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }
+  55% {
+    background: url(../img/slider/greensboro-childrens-museum_cooking-class.jpg), url(../img/slider/greensboro-childrens-museum_fun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }  
+  60% {
+    background: url(../img/slider/greensboro-childrens-museum_fun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }
+  70% {
+    background: url(../img/slider/greensboro-childrens-museum_fun.jpg),  url(../img/slider/greensboro-childrens-museum_hospital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }  
   75% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_hospital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }
+  85% {
+    background: url(../img/slider/greensboro-childrens-museum_hospital.jpg), url(../img/slider/greensboro-childrens-museum_train.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;      
+  }  
+  90% {
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
     background-size: cover;
     background-repeat: no-repeat;      
   }
   100% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
     background-size: cover;
     background-repeat: no-repeat;      
-  }  
+  }    
 }
 
 .section--birthday {
-  animation: bgbox 10s infinite ease-in-out;
-
+  animation: bgbox 30s infinite ease-in-out;
+  -moz-osx-animation: bgbox 30s infinite ease-in-out;
+  -webkit-animation: bgbox 30s infinite ease-in-out;
 }
 
 .birthday__overlay {

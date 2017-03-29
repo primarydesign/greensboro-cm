@@ -758,92 +758,139 @@ body, html {
 
 @keyframes bgbox {
   0% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  10% {
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg), url(../img/slider/greensboro-childrens-museum_arts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  15% {
+    background: url(../img/slider/greensboro-childrens-museum_arts.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
   25% {
-    background: url(../img/slider/soccer-ball.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_arts.jpg), url(../img/slider/greensboro-childrens-museum_playground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
-  50% {
-    background: url(../img/slider/soccer-ball.jpg);
+  30% {
+    background: url(../img/slider/greensboro-childrens-museum_playground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: url(../img/slider/greensboro-childrens-museum_playground.jpg), url(../img/slider/greensboro-childrens-museum_cooking-class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  45% {
+    background: url(../img/slider/greensboro-childrens-museum_cooking-class.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  55% {
+    background: url(../img/slider/greensboro-childrens-museum_cooking-class.jpg), url(../img/slider/greensboro-childrens-museum_fun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: url(../img/slider/greensboro-childrens-museum_fun.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  70% {
+    background: url(../img/slider/greensboro-childrens-museum_fun.jpg), url(../img/slider/greensboro-childrens-museum_hospital.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
   75% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_hospital.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  85% {
+    background: url(../img/slider/greensboro-childrens-museum_hospital.jpg), url(../img/slider/greensboro-childrens-museum_train.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  90% {
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
   100% {
-    background: url(../img/slider/cooking-class.jpg);
+    background: url(../img/slider/greensboro-childrens-museum_train.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
-/* line 156, ../../sass/main.scss */
+/* line 201, ../../sass/main.scss */
 .section--birthday {
-  animation: bgbox 10s infinite ease-in-out;
+  animation: bgbox 30s infinite ease-in-out;
+  -moz-osx-animation: bgbox 30s infinite ease-in-out;
+  -webkit-animation: bgbox 30s infinite ease-in-out;
 }
 
-/* line 161, ../../sass/main.scss */
+/* line 207, ../../sass/main.scss */
 .birthday__overlay {
   margin: 0 auto;
   padding: 30px;
   background: rgba(0, 93, 172, 0.8);
 }
 @media (min-width: 640px) {
-  /* line 161, ../../sass/main.scss */
+  /* line 207, ../../sass/main.scss */
   .birthday__overlay {
     width: 50%;
     max-width: 600px;
   }
 }
 @media (min-width: 960px) {
-  /* line 161, ../../sass/main.scss */
+  /* line 207, ../../sass/main.scss */
   .birthday__overlay {
     margin: 100px auto;
   }
 }
 @media (min-width: 1280px) {
-  /* line 161, ../../sass/main.scss */
+  /* line 207, ../../sass/main.scss */
   .birthday__overlay {
     margin: 125px auto;
   }
 }
 
-/* line 176, ../../sass/main.scss */
+/* line 222, ../../sass/main.scss */
 .birthday__cake {
   max-width: 150px;
   max-height: 250px;
 }
 
-/* line 180, ../../sass/main.scss */
+/* line 226, ../../sass/main.scss */
 .birthday__blurb {
   padding: 15px;
   font-size: 1.5em;
   font-weight: 700;
 }
 
-/* line 185, ../../sass/main.scss */
+/* line 231, ../../sass/main.scss */
 .birthday__donate-button {
   background: #b3c022;
   transition: background .25s;
   font-weight: 700;
 }
-/* line 189, ../../sass/main.scss */
+/* line 235, ../../sass/main.scss */
 .birthday__donate-button:hover {
   background: #f99f38;
 }
 
-/* line 193, ../../sass/main.scss */
+/* line 239, ../../sass/main.scss */
 .header {
   background: #b3c022;
 }
 
-/* line 196, ../../sass/main.scss */
+/* line 242, ../../sass/main.scss */
 .header__play-logo {
   display: block;
   margin: 25% auto;
@@ -851,28 +898,28 @@ body, html {
   max-width: 500px;
 }
 @media (min-width: 960px) {
-  /* line 196, ../../sass/main.scss */
+  /* line 242, ../../sass/main.scss */
   .header__play-logo {
     margin: 150px auto;
   }
 }
 
-/* line 205, ../../sass/main.scss */
+/* line 251, ../../sass/main.scss */
 .header__video-buttons {
   margin-bottom: 30px;
 }
 
-/* line 208, ../../sass/main.scss */
+/* line 254, ../../sass/main.scss */
 .header__button {
   border: 1px solid #fff;
   margin: 15px 3%;
 }
-/* line 211, ../../sass/main.scss */
+/* line 257, ../../sass/main.scss */
 .header__button:hover {
   background: #f99f38;
   transition: background .25s;
 }
-/* line 215, ../../sass/main.scss */
+/* line 261, ../../sass/main.scss */
 .header__button span {
   display: inline-block;
   width: auto;
@@ -880,13 +927,13 @@ body, html {
   font-weight: 700;
 }
 
-/* line 225, ../../sass/main.scss */
+/* line 271, ../../sass/main.scss */
 #video .header {
   background: rgba(0, 0, 0, 0.2);
   min-height: 55vh;
 }
 
-/* line 230, ../../sass/main.scss */
+/* line 276, ../../sass/main.scss */
 .section__headline--video {
   font-size: 2em;
   letter-spacing: 2px;
@@ -894,42 +941,42 @@ body, html {
   margin: 0;
 }
 
-/* line 237, ../../sass/main.scss */
+/* line 283, ../../sass/main.scss */
 .videos__list-item {
   display: inline-block;
   margin-bottom: 60px;
 }
 @media (min-width: 960px) {
-  /* line 237, ../../sass/main.scss */
+  /* line 283, ../../sass/main.scss */
   .videos__list-item {
     width: 33%;
   }
 }
 
-/* line 244, ../../sass/main.scss */
+/* line 290, ../../sass/main.scss */
 .videos__video {
   width: 100%;
   max-width: 1280px;
   max-height: 100vh;
 }
 
-/* line 250, ../../sass/main.scss */
+/* line 296, ../../sass/main.scss */
 .section--facts {
   background: #006cc7;
 }
-/* line 252, ../../sass/main.scss */
+/* line 298, ../../sass/main.scss */
 .section--facts .section__headline {
   padding-top: 50px;
 }
 
-/* line 256, ../../sass/main.scss */
+/* line 302, ../../sass/main.scss */
 .facts__list, .why__list {
   max-width: 960px;
   margin: 0 auto;
   font-size: 0;
 }
 
-/* line 261, ../../sass/main.scss */
+/* line 307, ../../sass/main.scss */
 .facts__list-item, .why__list-item {
   display: inline-block;
   min-height: 175px;
@@ -942,94 +989,94 @@ body, html {
   background-size: 75px;
 }
 @media (min-width: 960px) {
-  /* line 261, ../../sass/main.scss */
+  /* line 307, ../../sass/main.scss */
   .facts__list-item, .why__list-item {
     width: 27%;
   }
 }
 
-/* line 275, ../../sass/main.scss */
+/* line 321, ../../sass/main.scss */
 .fact--physical {
   background-image: url("../img/facts/icon_physical.svg");
 }
 
-/* line 278, ../../sass/main.scss */
+/* line 324, ../../sass/main.scss */
 .fact--reding {
   background-image: url("../img/facts/icon_reading.svg");
 }
 
-/* line 281, ../../sass/main.scss */
+/* line 327, ../../sass/main.scss */
 .fact--social {
   background-image: url("../img/facts/icon_social.svg");
 }
 
-/* line 284, ../../sass/main.scss */
+/* line 330, ../../sass/main.scss */
 .fact--vocab {
   background-image: url("../img/facts/icon_vocabulary.svg");
 }
 
-/* line 287, ../../sass/main.scss */
+/* line 333, ../../sass/main.scss */
 .fact--creativity {
   background-image: url("../img/facts/icon_creativity.svg");
 }
 
-/* line 290, ../../sass/main.scss */
+/* line 336, ../../sass/main.scss */
 .fact--confidence {
   background-image: url("../img/facts/icon_confidence.svg");
 }
 
-/* line 293, ../../sass/main.scss */
+/* line 339, ../../sass/main.scss */
 .fact__blurb, .why__blurb {
   max-width: 320px;
   font-size: 1.1rem;
 }
 
-/* line 297, ../../sass/main.scss */
+/* line 343, ../../sass/main.scss */
 .section--why {
   background: #b3c022;
 }
 
-/* line 300, ../../sass/main.scss */
+/* line 346, ../../sass/main.scss */
 .icon--play-plaza {
   background-image: url("../img/why/icon_play-plaza.svg");
 }
 
-/* line 303, ../../sass/main.scss */
+/* line 349, ../../sass/main.scss */
 .icon--water-wonders {
   background-image: url("../img/why/icon_water-wonders.svg");
 }
 
-/* line 306, ../../sass/main.scss */
+/* line 352, ../../sass/main.scss */
 .icon--tech-center {
   background-image: url("../img/why/icon_tech-center.svg");
 }
 
-/* line 309, ../../sass/main.scss */
+/* line 355, ../../sass/main.scss */
 .footer {
   background: #005dac;
 }
 
-/* line 312, ../../sass/main.scss */
+/* line 358, ../../sass/main.scss */
 .footer__donate-button {
   background: #f99f38;
   font-weight: 700;
 }
 
-/* line 316, ../../sass/main.scss */
+/* line 362, ../../sass/main.scss */
 .footer__social-icons {
   list-style-type: none;
   margin: 15px auto;
   padding: 0;
 }
 
-/* line 321, ../../sass/main.scss */
+/* line 367, ../../sass/main.scss */
 .footer__social-icon {
   display: inline-block;
   width: 25px;
   padding: 10px;
 }
 
-/* line 326, ../../sass/main.scss */
+/* line 372, ../../sass/main.scss */
 .footer__blurb {
   padding: 0;
   letter-spacing: 1px;
@@ -1037,7 +1084,7 @@ body, html {
   font-size: .85em;
 }
 
-/* line 333, ../../sass/main.scss */
+/* line 379, ../../sass/main.scss */
 .fixed {
   position: fixed;
   width: 100%;
